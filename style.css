@@ -5,7 +5,7 @@
 }
 
 body { 
-  background-image: url(psycho-head-bw.jpg);
+  background-image: url(img/psycho-head-bw.jpg);
   background-position: center;
   background-repeat: cover;
 }
@@ -19,7 +19,7 @@ body {
 
 .logo {
   display: flex;
-  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .js-results {
@@ -58,14 +58,13 @@ input:focus {
 	text-align: center;
 	border: solid 5px black;
 	border-radius: 5px;
-	margin: 30px;
+	margin: 10px;
 	padding: 10px;
 	background-color: rgba(255, 171, 61, 0.8);
 }
 
 ul {
   display: flex;
-
 }
 
 li {
@@ -117,30 +116,46 @@ fieldset {
 /* TABLET MEDIA-VIEW */
 @media(min-width: 600px) {
 
-  .logo {
-    display: flex;
-    flex-direction: row-reverse; /* working on the logo layout*/
+  header{
+    width:100%;
   }
 
-  div.logo img{
-    width: 200%;
-    height: 200%;
+  .logo {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+ .logo img{
+    width: 200px;
+    height: 200px;
   }
 
   ul{
-    background-color: rgba(0,0,0, 0.5);
+    /*background-color: rgba(0,0,0, 0.5);
     border: solid 1px white;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 20px;*/
   }
 
   li {
     font-size: 1.5em;
+    background-color: rgba(0,0,0, 0.5);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  main{
+    width: 70%;
   }
 
   .heading, .message {
+    width: 100%;
     font-size: 2.5em;
-    padding: 10px;
+    padding: 30px;
   }
 
   input {
@@ -170,9 +185,6 @@ fieldset {
 /* WIDE MEDIA-VIEW */
 @media(min-width: 1200px) {
 
-  ul {
-    padding: 15px 25px;
-  }
 
   li {
     font-size: 2em;
