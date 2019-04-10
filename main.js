@@ -158,7 +158,7 @@ $(function(){
 
   function generateFinalResultsPage() {
     const finalResultsHTML = 
-      `<h2 class="message">Congratulations <br>Your final score was ${score}/10.</h2>
+      `<h2 class="message">Congratulations <br>Your final score was ${score}/${questionIndex}.</h2>
         <input class="js-retake-quiz" type="submit" value="RETAKE QUIZ">`
 
       $(".js-results").empty();
