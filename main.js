@@ -137,7 +137,7 @@ $(function(){
 
 
   function handleNextQuestion() {
-    if(questionIndex <= 10 ){
+    if( questionIndex < QUESTIONS.length ){
       $(".js-next-question").on("click", function(event){
         generateQuestions(questionIndex);
       }); //end onCLick
